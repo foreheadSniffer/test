@@ -7,21 +7,31 @@ export class ApiService {
 	title = 'Angular 2';
 	document: Object;
 	http: Http;
+	accessToken: String;
 	constructor(http: Http) {
 		this.http = http;
+		this.accessToken = '';
 	};
 	getPosts = function (lastPostId: number = -1) {
 		return this.http.get('/posts.json');
 	};
 	getDocument = function () {
-		if (this.document)
+		if (this.document) {
 			return Observable.of(this.document);
+		}
 
 		return this.http.get('/document.json').map(data => data.json()).do(result => this.document = result).share();
-	}
+	};
 	getBoxTypes = function () {
-		if (this.document)
+		if (this.document) {
 			return Observable.of(this.document.settings.boxes)
+		}
 		return this.http.get('/document.json').map(data => data.json()).do(result => this.document = result).share().map(document => document.settings.boxes);
+	};
+	uploadFile = function () {
+
+	};
+	submitForm = function (submitable: Object) {
+		console.log(submitable);
 	}
 }

@@ -8,8 +8,8 @@
 	</div>
 	<div class="form" *ngIf='forms && forms[post.type]'>
 		<form>
-			<my-form-element [box]='forms[post.type]'></my-form-element>
-			<a class="waves-effect waves-light btn-large">Отправить</a>
+			<my-form-element [box]='forms[post.type]' [(post)]='post'></my-form-element>
+			<a (click)='submit()' class="waves-effect waves-light btn-large">Отправить</a>
 		</form>
 	</div>
 </div>

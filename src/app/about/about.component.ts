@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
 		}
 		this._apiService = api;
 	};
-	onPostTypeChange(value) {
+	onPostTypeChange = function(value) {
 		this.post = {
 			type: value
 		}
@@ -40,6 +40,10 @@ export class AboutComponent implements OnInit {
 			})
 
 		console.log('Hello About');
-	}
 
+	};
+	submit = function(){
+		console.log(this.post);
+		// this._apiService.submitForm(this.post)
+	}
 }

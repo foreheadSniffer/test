@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiService} from '../shared/api.service';
 import {PostComponent} from '../components/post/post.component';
-import {filterPublishedPipe} from './postList.pipe'
+import {filterPublishedPipe} from './postList.pipe';
 @Component({
 	selector: 'my-home',
 	templateUrl: './home.component.html',

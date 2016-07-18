@@ -3,15 +3,15 @@
 	<div *ngFor='let input of box.attributes'>
 		<label>{{input.label}}</label>
 		<div [ngSwitch]='input.type'>
-			<input *ngSwitchCase='"string"' type='text' [(ngModel)]='input.value'>
-			<input *ngSwitchCase='"file"' type="file" [(ngModel)]='input.value'>
-			<input *ngSwitchCase='"image"' type="file" [(ngModel)]='input.value'>
-			<textarea *ngSwitchCase='"text"' [(ngModel)]='input.value'> </textarea>
+			<input *ngSwitchCase='"string"' type='text' [(ngModel)]='post[input.name].value'>
+			<input *ngSwitchCase='"file"' type="file" [(ngModel)]='post[input.name].value'>
+			<input *ngSwitchCase='"image"' type="file" [(ngModel)]='post[input.name].value'>
+			<textarea *ngSwitchCase='"text"' [(ngModel)]='post[input.name].value'> </textarea>
 		</div>
 		<div *ngIf='input.hint'>{{input.hint}}</div>
 	</div>
 	<div *ngFor='let children of box.children' class='child'>
-		<my-form-element  [box]='children'></my-form-element>	
+		<my-form-element [(post)]='post.children' [box]='children'></my-form-element>	
 	</div>
 	
 </div>

@@ -8,14 +8,14 @@ import { APP_ROUTER_PROVIDERS } from './app/app.routes';
 
 // depending on the env mode, enable prod mode or add debugging modules
 if (process.env.ENV === 'build') {
-  enableProdMode();
+	enableProdMode();
 }
 
 bootstrap(AppComponent, [
-    // These are dependencies of our App
-    disableDeprecatedForms(),
-  	provideForms(),
-    HTTP_PROVIDERS,
-    APP_ROUTER_PROVIDERS
-  ])
-  .catch(err => console.error(err));
+	// These are dependencies of our App
+	disableDeprecatedForms(),
+		provideForms(),
+	HTTP_PROVIDERS,
+	APP_ROUTER_PROVIDERS
+	])
+	.catch(err => console.error(err));
