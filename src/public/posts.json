@@ -1,0 +1,37 @@
+{
+	"posts": [
+		{
+			"id": 1,
+			"title": "Заголовок тестового поста",
+			"published": true,
+			"type": "facebook-post",
+			"facebook-link": "https://facebook.com"
+		},
+		{
+			"id": 2,
+			"type": "image",
+			"published": true,
+			"title": "Второй пост, который картинка",
+			"description": "Описалово к посту, который картинка, на сайте, который построил Джек",
+			"image": {
+				"original": {
+					"width": 500,
+					"height": 600,
+					"url": "https://pbs.twimg.com/profile_images/485414091318501379/QvwNHa6M.jpeg"
+				},
+				"default": {
+					"width": 500,
+					"height": 600,
+					"url": "https://pbs.twimg.com/profile_images/485414091318501379/QvwNHa6M.jpeg"
+				}
+			}
+		},
+		{
+			"id": 3,
+			"type": "text",
+			"published": false,
+			"title": "Третий пост про тритий",
+			"text": "Хакеры разместили в Twitter Цукерберга, которым он не пользовался с 2012 г., несколько насмешливых сообщений, в том числе о том, что данные о пароле были получены ими из утечки соцсети Linkedin. Сам пароль оказался простейшим - «dadada». Эту информацию Facebook не комментировал. Сообщения уже удалены."
+		}
+	]
+}

@@ -1,8 +1,69 @@
 // styles in src/style directory are applied to the whole page
+@import '../vendors/sass/materialize';
+
 body {
-    background: #0147A7;
-    color: #fff;
+    background: #F1F1F1;
+    color: #272727;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
 }
 a {
     color: #03A9F4;
+}
+
+.card {
+	background-color: white;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.2);
+
+	.title {
+		padding: 20px;
+		font-size: 24px;
+		
+	}
+	.text {
+		padding: 0 20px 20px;
+	}
+}
+
+.add-button{
+	position: fixed;
+	background-color: #2196F3;
+	width: 56px;
+	height: 56px;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 28px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+	.icon-add{
+		background-image: url('../public/img/edit.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 24px;
+		width: 24px;
+		color: white;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 50%;
+	}
+}
+
+.icon-back{
+	width: 32px;
+	height: 15px;
+	background-image: url('../public/img/back-arrow.svg');
+	display: inline-block;
+	vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.hidden{
+	display: none;
 }

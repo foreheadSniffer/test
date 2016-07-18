@@ -1,0 +1,17 @@
+<div>
+	<label>{{box.label}}</label>
+	<div *ngFor='let input of box.attributes'>
+		<label>{{input.label}}</label>
+		<div [ngSwitch]='input.type'>
+			<input *ngSwitchCase='"string"' type='text' [(ngModel)]='input.value'>
+			<input *ngSwitchCase='"file"' type="file" [(ngModel)]='input.value'>
+			<input *ngSwitchCase='"image"' type="file" [(ngModel)]='input.value'>
+			<textarea *ngSwitchCase='"text"' [(ngModel)]='input.value'> </textarea>
+		</div>
+		<div *ngIf='input.hint'>{{input.hint}}</div>
+	</div>
+	<div *ngFor='let children of box.children' class='child'>
+		<my-form-element  [box]='children'></my-form-element>	
+	</div>
+	
+</div>

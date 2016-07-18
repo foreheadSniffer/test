@@ -1,0 +1,167 @@
+{
+    "id": 140737488970958,
+    "title": "Праздничное оформление",
+    "published": false,
+    "published_at": null,
+    "milestones": {
+        "created": {
+            "at": "2016-07-15T10:25:36.000+03:00",
+            "by": 140737488355385
+        }
+    },
+    "url_id": null,
+    "category_ids": [140737488355530, 140737488355531, 140737488355328, 140737488355329, 140737488355335, 140737488355336, 140737488355337, 140737488355339, 140737488355369, 140737488355383],
+    "participant_ids": [140737488355385],
+    "exclude_list_ids": [],
+    "illustrated": false,
+    "part": "article",
+    "settings": {
+        "additions": {
+            "attributes": [{
+                "label": "Дата публикации",
+                "type": "string",
+                "name": "published_at"
+            }]
+        },
+        "head": {
+            "attributes": [{
+                "label": "Подзаголовок",
+                "hint": "До 75 знаков с пробелами",
+                "max_chars": 75,
+                "type": "text",
+                "rows": 3,
+                "name": "subtitle"
+            }, {
+                "label": "Газетный заголовок",
+                "type": "string",
+                "name": "newspaper_title"
+            }, {
+                "label": "Газетный подзаголовок",
+                "type": "text",
+                "rows": 3,
+                "name": "newspaper_subtitle"
+            }, {
+                "label": "Дата с чекбоксом",
+                "type": "datetime_with_checkbox",
+                "name": "datetime_and_flag"
+            }]
+        },
+        "attachments": {
+            "gallery_image": {
+                "versions": {
+                    "default_large": {
+                        "width": 669,
+                        "height": 446
+                    },
+                    "default_medium": {
+                        "width": 570,
+                        "height": 380
+                    },
+                    "default_thumbnail": { "width": 75, "height": 50 },
+                    "fullscreen_large": { "width": 768, "height": 512 },
+                    "fullscreen_thumbnail": { "width": 168, "height": 112 },
+                    "thumbnail": { "width": 75, "height": 50 },
+                    "thumbnail_low": { "width": 180, "height": 120 },
+                    "thumbnail_high": { "width": 270, "height": 180 },
+                    "default": { "width": 570, "height": 380 },
+                    "mobile_low": { "width": 640, "height": 426 },
+                    "mobile_high": { "width": 960, "height": 640 },
+                    "fullscreen": { "width": 1920, "height": 1280 }
+                }
+            },
+            "title_image": { "versions": { "normal": { "width": 570, "height": 380 }, "level1": { "width": 369, "height": 246 }, "level2": { "width": 270, "height": 180 }, "small": { "width": 168, "height": 112 }, "thumbnail": { "width": 75, "height": 50 }, "thumbnail_low": { "width": 180, "height": 120 }, "thumbnail_high": { "width": 270, "height": 180 }, "default": { "width": 570, "height": 380 }, "mobile_low": { "width": 640, "height": 426 }, "mobile_high": { "width": 960, "height": 640 }, "fullscreen": { "width": 1920, "height": 1280 } } },
+            "portrait": { "versions": { "type1": { "width": 150, "height": 150 }, "type2": { "width": 100, "height": 100 }, "type3": { "width": 70, "height": 70 }, "type4": { "width": 48, "height": 48 }, "mobile_low": { "width": 140, "height": 140 }, "mobile_high": { "width": 210, "height": 210 }, "tablet_high": { "width": 320, "height": 320 } } },
+            "inset_text_image": { "versions": { "default": { "width": 270, "height": 180 }, "mobile_low": { "width": 640, "height": 426 }, "mobile_high": { "width": 960, "height": 640 } } },
+            "quote_image": { "versions": { "default": { "width": 70, "height": 70 }, "mobile_low": { "width": 140, "height": 140 }, "mobile_high": { "width": 210, "height": 210 } } },
+            "chonology_image": { "versions": { "default": { "width": 70, "height": 70 }, "mobile_low": { "width": 140, "height": 140 }, "mobile_high": { "width": 210, "height": 210 } } },
+            "inset_image": { "versions": { "tiny": { "width": 369, "height": 246 }, "thumbnail": { "width": 75, "height": 50 }, "thumbnail_low": { "width": 180, "height": 120 }, "thumbnail_high": { "width": 270, "height": 180 }, "default": { "width": 570, "height": 380 }, "mobile_low": { "width": 640, "height": 426 }, "mobile_high": { "width": 960, "height": 640 }, "fullscreen": { "width": 1920, "height": 1280 } } },
+            "slider": { "versions": { "default": { "width": 1200, "height": 380 } } },
+            "cycle_image": { "versions": { "medium": { "width": 270, "height": 180 }, "small": { "width": 198, "height": 132 } } },
+            "newsstand": { "versions": { "iphone_multitasking_1x": { "width": 57, "height": 57 }, "iphone_multitasking_2x": { "width": 114, "height": 114 }, "ipad_multitasking_1x": { "width": 72, "height": 72 }, "ipad_multitasking_2x": { "width": 144, "height": 144 }, "ipad_shelf_1x": { "width": 126, "height": 126 }, "ipad_shelf_2x": { "width": 252, "height": 252 }, "iphone_shelf_1x": { "width": 90, "height": 90 }, "iphone_shelf_2x": { "width": 180, "height": 180 }, "source": { "width": 1024, "height": 1024 } } },
+            "company_image": { "versions": { "default": { "width": 168, "height": 112 } } },
+            "press_release_image": { "versions": { "default": { "width": 570, "height": 380 } } },
+            "sharing_image": { "versions": { "default": { "width": 1200, "height": 630 } } }
+        },
+        "boxes": {
+            "paragraph": {
+                "attributes": [{
+                    "label": "Время создания",
+                    "type": "string",
+                    "name": "created_at"
+                }, {
+                    "label": "ID поста в Scribble",
+                    "type": "string",
+                    "name": "scribble_post_id"
+                }, {
+                    "label": "Автор поста",
+                    "type": "string",
+                    "name": "scribble_post_author"
+                }, {
+                    "default": "plain",
+                    "label": "Тип",
+                    "type": "select",
+                    "name": "kind"
+                }, {
+                    "label": "Содержание",
+                    "type": "text",
+                    "name": "body"
+                }, {
+                    "label": "Выравнивание абзаца",
+                    "type": "align",
+                    "name": "text_align"
+                }],
+                "label": "Параграф"
+            },
+            "text": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "Заголовок", "type": "string", "hint": "От 50 до 70 знаков с пробелами.", "min_chars": 50, "max_chars": 70, "name": "title" }, { "label": "Текст вреза", "type": "text", "rows": 5, "hint": "От 500 до 2000 знаков с пробелами. От 1500 знаков врез становится широким.", "min_chars": 500, "max_chars": 2000, "name": "body" }], "label": "Текст" },
+            "gallery": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }], "label": "Галерея", "children": ["gallery_image"] },
+            "gallery_image": { "attributes": [{ "label": "Описание к фото", "type": "text", "rows": 3, "hint": "До 170 знаков с пробелами.", "max_chars": 170, "layout_column": 2, "name": "description" }, { "label": "Автор фото", "type": "string", "hint": "До 40 знаков.", "max_chars": 40, "layout_column": 2, "name": "author" }, { "label": "Копирайт", "type": "string", "hint": "До 40 знаков.", "max_chars": 40, "layout_column": 2, "name": "credits" }, { "label": "Картинка", "type": "image", "kind": "gallery_image", "hint": "Размер 770x510 или больше, но в той же пропорции.", "layout_column": 1, "name": "image_id" }], "label": "Картинка", "layout": { "columns": [4, 8] } },
+            "inset_link": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "Выравнивание", "type": "align", "name": "align" }, { "label": "Ссылка на документ", "hint": "Найдите документ по ссылке или по заголовку.", "type": "document", "name": "bound_document_id" }, { "label": "Альтернативный заголовок", "type": "string", "name": "alternative_title" }, { "label": "Альтернативный подзаголовок", "type": "string", "name": "alternative_subtitle" }], "label": "Ссылка", "hint": "Если выбрано выравнивание по центру — большая зеленая ссылка, слева - анонс материала." },
+            "inset_document": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "Ссылка на документ", "hint": "Найдите документ по ссылке или по заголовку.", "type": "document", "name": "bound_document_id" }], "label": "Встроенное мультимедиа" },
+            "inset_text": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "Заголовок", "type": "string", "layout_column": 2, "hint": "От 50 до 70 знаков с пробелами.", "min_chars": 50, "max_chars": 70, "name": "title" }, { "label": "Текст вреза", "type": "text", "rows": 5, "layout_column": 2, "hint": "От 500 до 800 знаков с пробелами. Для форматирования инф-и о компании использовать <b>, <br>.", "min_chars": 500, "max_chars": 800, "name": "body" }, { "label": "Фото", "type": "image", "kind": "inset_text_image", "layout_column": 1, "hint": "Размер 270х180.", "name": "image_id" }], "label": "Текст + картинка", "layout": { "columns": [5, 7] } },
+            "quote": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "Имя автора цитаты", "type": "string", "hint": "Имя, фамилия, до 35 знаков с пробелами.", "max_chars": 35, "layout_column": 2, "name": "name" }, { "label": "Должность автора цитаты", "type": "string", "hint": "До 100 знаков с пробелами.", "max_chars": 35, "layout_column": 2, "name": "job" }, { "label": "Фото автора цитаты", "type": "image", "kind": "quote_image", "hint": "Размер 70x70.", "layout_column": 1, "name": "image_id" }, { "label": "Текст цитаты", "type": "text", "rows": 5, "layout_column": 2, "hint": "От 150 до 170 знаков с пробелами. Текст цитаты должен быть в кавычках-«ёлочках».", "min_chars": 150, "max_chars": 170, "name": "body" }], "label": "Цитата", "layout": { "columns": [5, 7] } },
+            "chronology": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "Заголовок", "type": "string", "hint": "До 70 знаков с пробелами.", "max_chars": 70, "name": "title" }, { "label": "Подзаголовок", "type": "text", "rows": 2, "hint": "До 150 знаков с пробелами.", "max_chars": 150, "name": "body" }, { "label": "Фото для биографии", "type": "image", "kind": "chonology_image", "hint": "Размер 70x70.", "name": "image_id" }], "label": "Хронология", "children": ["chronology_item"] },
+            "chronology_item": { "attributes": [{ "label": "Этап, дата", "type": "string", "hint": "До 5 знаков с пробелами.", "max_chars": 5, "name": "label" }, { "label": "Этап, текст", "type": "text", "rows": 2, "hint": "До 250 знаков с пробелами.", "max_chars": 250, "name": "body" }], "label": "Этап" },
+            "inset_image": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "ID поста в Scribble", "type": "string", "name": "scribble_post_id" }, { "label": "Автор поста", "type": "string", "name": "scribble_post_author" }, { "label": "Описание к фото", "type": "string", "layout_column": 2, "hint": "До 170 знаков с пробелами.", "max_chars": 170, "name": "description" }, { "label": "Автор фото", "type": "string", "layout_column": 2, "hint": "До 40 знаков.", "max_chars": 40, "name": "author" }, { "label": "Копирайт", "type": "string", "layout_column": 2, "hint": "До 40 знаков.", "max_chars": 40, "name": "credits" }, { "label": "Фото", "type": "image", "kind": "inset_image", "hint": "Размер 1920х1280.", "layout_column": 1, "name": "image_id" }], "label": "Изображение", "layout": { "columns": [5, 7] } },
+            "inset_media": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "ID поста в Scribble", "type": "string", "name": "scribble_post_id" }, { "label": "Автор поста", "type": "string", "name": "scribble_post_author" }, { "label": "Embed-код", "type": "text", "rows": 15, "hint": "Вставьте embed-код.", "name": "body" }], "label": "Embed" },
+            "dulton_media": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "ID поста в Scribble", "type": "string", "name": "scribble_post_id" }, { "label": "Автор поста", "type": "string", "name": "scribble_post_author" }, { "label": "Заголовок", "type": "string", "name": "title" }, { "label": "Описание", "type": "string", "name": "description" }, { "label": "Идентификатор", "type": "string", "name": "dulton_id" }], "label": "Видео с DultonMedia" },
+            "newsrelease_archive": { "attributes": [{ "label": "Входной архив PDF", "type": "file", "name": "pdf_id" }], "label": "Архив газеты", "children": ["newsrelease_page"] },
+            "newsrelease_mobile_archive": { "attributes": [{ "label": "version", "type": "string", "name": "version" }, { "label": "zip", "type": "file", "name": "zip_id" }], "label": null },
+            "newsrelease_page": { "attributes": [{ "label": "Превью (JPG)", "type": "image", "name": "jpg_id" }, { "label": "Полный вид (SWF)", "type": "file", "name": "swf_id" }, { "label": "Полоса для страницы", "type": "category", "children_of": "newspaper", "name": "category_page_id" }], "label": "Страница флэш-версии" },
+            "newsrelease_epub": { "attributes": [{ "label": "Файл Epub", "type": "file", "name": "epub_id" }], "label": "Epub газеты" },
+            "newsrelease_podcast": { "attributes": [{ "label": "Файл MP3", "type": "file", "name": "podcast_id" }], "label": "Подкаст газеты" },
+            "container_attachments": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }], "label": "Прикрепленные файлы", "children": ["attachment_item"] },
+            "attachment_item": { "attributes": [{ "label": "файл", "type": "file", "layout_column": 1, "name": "file_id" }, { "label": "Подпись", "type": "string", "layout_column": 2, "name": "title" }, { "label": "Описание", "type": "string", "layout_column": 2, "name": "description" }], "label": "Элемент списка файлов", "layout": { "columns": [4, 8] } },
+            "table": { "attributes": [{ "label": "Время создания", "type": "string", "name": "created_at" }, { "label": "Заголовок", "type": "string", "name": "title" }, { "label": "JSON", "type": "text", "name": "json" }, { "label": "Подпись", "type": "string", "name": "caption" }], "label": "Таблица" },
+            "delimiter_page": { "attributes": [{ "label": "Название страницы", "type": "string", "name": "title" }, { "label": "Часть для URL", "type": "string", "name": "slug" }], "label": "Разделитель страниц" },
+            "delimiter_tab": { "attributes": [{ "label": "Название вкладки", "type": "string", "name": "title" }, { "label": "Часть для URL", "type": "string", "name": "slug" }], "label": "Разделитель вкладок" },
+            "test": { "attributes": [{ "label": "JSON", "type": "text", "name": "json" }], "label": "Тест" },
+            "root": { "children": ["paragraph", "text", "inset_text", "inset_link", "inset_document", "gallery", "quote", "chronology", "inset_image", "inset_media", "dulton_media", "container_attachments", "table"] }
+        },
+        "urls": { "attributes": [{ "label": "Домен", "type": "select", "source": "/v1/categories/domains", "name": "domain" }, { "label": "Рубрика", "type": "select", "source": "/v1/categories/rubrics", "name": "rubric" }, { "label": "Тип", "type": "select", "source": "/v1/categories/parts", "name": "type" }, { "label": "Дата", "type": "datepicker", "name": "date" }, { "label": "ID", "type": "pseudo_id", "name": "pseudo_id" }, { "label": "Слаг", "type": "keywords", "name": "slug" }, { "type": "keywords", "name": "keywords" }], "mask": ":domain/newspaper/:type/:date/:pseudo_id-:slug" },
+        "source": { "attributes": [{ "label": "Название", "type": "string", "name": "source_title" }, { "label": "URL", "type": "string", "name": "source_url" }, { "label": "Источник", "type": "select", "name": "source_id" }] },
+        "assignees": true,
+        "links": { "reference": { "label": "Ссылки по теме", "placeholder": "название документа или ссылка", "filter": ["kinds", "materials", "parts"], "not_found": ["kinds", "links"], "position": 10 }, "companies": { "label": "Упоминаемые компании и персоны", "placeholder": "название документа или ссылка", "filter": ["kinds", "companies"], "position": 50 }, "authors": { "label": "Список авторов", "placeholder": "автор", "filter": ["kinds", "authors"], "position": 20 }, "newsrelease": { "label": "Газетный выпуск", "placeholder": "название документа или ссылка", "filter": ["kinds", "newsrelease"], "position": 30 } },
+        "proofreading": { "on": true, "group": "proofreaders" },
+        "box_moving": { "on": true },
+        "title_image": { "attributes": [{ "label": "Описание к фото", "hint": "До 170 знаков с пробелами", "max_chars": 170, "type": "string", "layout_column": 2, "name": "image_alt" }, { "label": "Автор фото", "hint": "До 40 знаков с пробелами", "max_chars": 40, "type": "string", "layout_column": 2, "name": "image_author" }, { "label": "Копирайт", "hint": "До 40 знаков с пробелами", "max_chars": 40, "type": "string", "layout_column": 2, "name": "image_source" }, { "label": "Картинка", "type": "image", "kind": "title_image", "layout_column": 1, "name": "image_id" }, { "label": "Картинка для слайдера", "hint": "1200x380px", "type": "image", "kind": "slider", "layout_column": 1, "name": "slider_id" }, { "label": "Картинка для шаринга", "hint": "1200x630px", "type": "image", "kind": "sharing_image", "layout_column": 1, "name": "sharing_id" }, { "label": "Текст для шаринга", "hint": "До 170 знаков с пробелами", "max_chars": 170, "type": "string", "placeholder": "Оставьте пустым, чтобы использовался заголовок", "layout_column": 2, "name": "sharing_alt" }], "label": "Заглавная картинка", "layout": { "columns": [5, 7] } }
+    },
+    "datetime_and_flag": null,
+    "subtitle": "",
+    "newspaper_title": "Праздничное оформление",
+    "newspaper_subtitle": "«Униженные и окрыленные» Ирины Кориной – выставка-праздник, инсталляция в стиле московского благоустройства. Но главное на ней – графика",
+    "source_title": "Ведомости",
+    "source_url": "http://www.vedomosti.ru/",
+    "source_id": 0,
+    "assigned_editor_id": 0,
+    "assignee_status": "disabled",
+    "proofread": false,
+    "box_move_editor_id": 0,
+    "box_move_at": null,
+    "image_alt": "",
+    "image_author": "",
+    "image_source": "",
+    "image_id": 0,
+    "slider_id": 0,
+    "sharing_id": 0,
+    "sharing_alt": ""
+}
