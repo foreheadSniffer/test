@@ -1,6 +1,8 @@
 // styles in src/style directory are applied to the whole page
-@import '../vendors/sass/materialize';
-
+// @import '../vendors/sass/materialize';
+html{
+	touch-action: manipulation;
+}
 body {
     background: #F1F1F1;
     color: #272727;
@@ -17,6 +19,7 @@ a {
 	background-color: white;
 	margin-bottom: 20px;
 	box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.2);
+  min-height: 150px;
 
 	.title {
 		padding: 20px;
@@ -27,43 +30,260 @@ a {
 		padding: 0 20px 20px;
 	}
 }
+.icon-add {
 
-.add-button{
-	position: fixed;
-	background-color: #2196F3;
-	width: 56px;
-	height: 56px;
-	bottom: 30px;
-	right: 30px;
-	border-radius: 28px;
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-
-	.icon-add{
-		background-image: url('../public/img/edit.svg');
+		background-image: url('../public/img/add.svg');
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: 16px;
 		height: 24px;
-		width: 24px;
+		width: 50px;
+		opacity: .3;
 		color: white;
-		position: absolute;
-		transform: translate(-50%, -50%);
-		left: 50%;
-		top: 50%;
-	}
+		background-position: center;
+
+}
+.add-button{
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	height: 100%;	
+	right: 0;
+	transition: .2s;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+
+	
+}
+.add-button:active{
+	background-color: white;
 }
 
 .icon-back{
-	width: 32px;
-	height: 15px;
+	width: 60px;
+	height: 100%;
 	background-image: url('../public/img/back-arrow.svg');
-	display: inline-block;
-	vertical-align: middle;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+	display: inline-block;    
+  vertical-align: middle;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 
+}
+
+header {
+  background-color: #2196F3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  color: white;
+  z-index: 1;
+  box-sizing: border-box;
+  nav{
+  	  padding: 16px;
+  	  position: relative;
+  }
+  .title{
+    vertical-align: middle;
+  }
+}
+
+main {
+  margin-top: 60px;
+  display: block;
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
 }
 
 .hidden{
 	display: none;
 }
+.name {
+    font-weight: 900;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+header {
+    text-align: center;
+    background: #ff6c70;
+    box-shadow: none;
+}
+
+body {
+    color: #7d7885;
+    font-weight: 900;
+}
+
+.card {
+    padding: 15px;
+}
+
+img {
+
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-header {
+    margin-bottom: 15px;
+}
+
+.status {
+    color: #beb9c1;
+    font-weight: 400;
+}
+.card-header {
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 400;
+    color: #beb9c1;
+}
+
+.card-image {
+    position: relative;
+	span.card-title {
+	    position: absolute;
+	    color: white;
+	    bottom: 10px;
+	    z-index: 1;
+	    /* padding-left: 10px; */
+	    padding: 0 10px;
+	}
+}
+p {
+    margin: 0;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.post-type{
+  select{
+      width: 100%;
+      display: block;
+      background: white;
+      -webkit-appearance: none;
+      border: none;
+      border-radius: 0;
+      padding: 18px 15px;
+      font-size: 16px;
+      font-weight: 900;
+      outline: none !important;
+      color: #7d7885;
+  }
+}
+
+.form {
+    padding: 15px;
+}
+
+.element input {
+    /* width: 100%; */
+    display: block;
+    background: white;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 0;
+    padding: 18px 15px;
+    font-size: 16px;
+    font-weight: 900;
+    outline: none !important;
+    color: #7d7885;
+    width: 100%;
+
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    width: 100%;
+    display: block;
+    background: white;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 0;
+    padding: 18px 15px;
+    font-size: 16px;
+    font-weight: 900;
+    outline: none !important;
+    color: #7d7885;
+    resize: vertical;
+}
+textarea, input[type='text']{
+    margin-bottom: 10px;
+}
+label {
+    margin-bottom: 7px;
+    display: inline-block;
+}
+.hint {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.btn-large{
+    -webkit-appearance: none;
+    border: none;
+    color: white;
+    background: #ff6c70;
+    font-weight: 900;
+    font-family: 'Roboto';
+    /* float: right; */
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    border-radius: 4px;
+    width: 140px;
+    text-align: center;
+    height: 45px;
+    line-height: 100%;
+    outline: none;
+    transition: .2s;
+}
+.btn-large:active{
+  background-color: #e24b4f;
+}
+.element{
+  margin-bottom: 15px;
+}
+.post-type{
+  .input-field{
+    position: relative;
+    &:after{
+      position: absolute;
+      top: 50%;
+      right: 28px;
+      margin-top: -5px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 11px 9px 0 9px;
+      border-color: #7d7885 transparent transparent transparent;
+      opacity: .6;
+    }
+  }
+ 
+}
+

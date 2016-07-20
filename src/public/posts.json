@@ -1,13 +1,6 @@
 {
 	"posts": [
 		{
-			"id": 1,
-			"title": "Заголовок тестового поста",
-			"published": true,
-			"type": "facebook-post",
-			"facebook-link": "https://facebook.com"
-		},
-		{
 			"id": 2,
 			"type": "image",
 			"published": true,

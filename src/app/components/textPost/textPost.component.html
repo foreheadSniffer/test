@@ -1,8 +1,13 @@
 <div class="col s12 m6">
 	<div class="card darken-1">
-	<div class="card-content">
-		<span class="card-title">{{post.title}}</span>
-		<p>{{post.text}}</p>
-	</div>
-  </div>
+		<div class="card-content">
+			<div class="card-header">
+				<div class="name">John Doe</div>
+				<div class="status">{{post.published ? 'Опубликовано' : 'Черновик'}}</div>
+				<div class="time">20 мин</div>
+			</div>
+			<span class="card-title">{{post.title}}</span>
+			<p>{{post.body}}</p>
+		</div>
+	 </div>
 </div>

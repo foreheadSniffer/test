@@ -1,11 +1,14 @@
-<div class="col s12 m7">
-	<div class="card">
-		<div class="card-image">
-			<img [src]='post.image.original.url'>
-			<span class="card-title">{{post.title}}</span>
+<div class="card">
+	<div class="card-image">
+		<div class="card-header">
+				<div class="name">{{post.author ? post.author : 'John Doe'}}</div>
+				<div class="status">{{post.enabled ? 'Опубликовано' : 'Черновик'}}</div>
+				<div class="time">20 мин</div>
 		</div>
-		<div class="card-content">
-			<p>{{post.description}}</p>
-		</div>
+		<img *ngIf='post.image' [src]='post.image.original.url'>
+		<span class="card-title">{{post.title}}</span>
 	</div>
-</div>	
+	<div class="card-content">
+		<p>{{post.description}}</p>
+	</div>
+</div>

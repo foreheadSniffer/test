@@ -1,4 +1,5 @@
-<div class="row" [ngSwitch]='post.type'>
+<div class="row" [ngSwitch]='post.type' [class.published]='post.published'>
 	<my-text-post *ngSwitchCase='"text"' [post]='post'></my-text-post>
-	<my-image-post *ngSwitchCase='"image"' [post]='post'></my-image-post>
+	<my-text-post *ngSwitchCase='"paragraph"' [post]='post'></my-text-post>
+	<my-image-post *ngSwitchCase='"inset_image"' [post]='post'></my-image-post>
 </div>

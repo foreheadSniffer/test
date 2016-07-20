@@ -1,17 +1,15 @@
 <div>
-	<label>{{box.label}}</label>
-	<div *ngFor='let input of box.attributes'>
+	<div *ngFor='let input of box.attributes | myFieldsFilter' class="element">
 		<label>{{input.label}}</label>
 		<div [ngSwitch]='input.type'>
-			<input *ngSwitchCase='"string"' type='text' [(ngModel)]='post[input.name].value'>
-			<input *ngSwitchCase='"file"' type="file" [(ngModel)]='post[input.name].value'>
-			<input *ngSwitchCase='"image"' type="file" [(ngModel)]='post[input.name].value'>
-			<textarea *ngSwitchCase='"text"' [(ngModel)]='post[input.name].value'> </textarea>
+			<input *ngSwitchCase='"string"' type='text' [(ngModel)]='post[input.name]' [attr.maxlength]='input.max_chars' [attr.minlength]='input.min_chars'>
+			<input *ngSwitchCase='"file"' type="file" [(ngModel)]='post[input.name]' (change)='onChange($event)'>
+			<input *ngSwitchCase='"image"' type="file" [(ngModel)]='post[input.name]' (change)='onChange($event)'>
+			<textarea *ngSwitchCase='"text"' [(ngModel)]='post[input.name]'> </textarea>
 		</div>
-		<div *ngIf='input.hint'>{{input.hint}}</div>
+		<div class="hint" *ngIf='input.hint'>{{input.hint}}</div>
 	</div>
 	<div *ngFor='let children of box.children' class='child'>
-		<my-form-element [(post)]='post.children' [box]='children'></my-form-element>	
-	</div>
-	
+		<my-form-element *ngIf='boxTypes' [(post)]='post.children' [box]='boxTypes[children]'></my-form-element>	
+	</div> 
 </div>

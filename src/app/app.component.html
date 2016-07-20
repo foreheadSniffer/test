@@ -3,15 +3,13 @@
   	<a [routerLinkActive]="['hidden']" [routerLink]="['home']"  class='icon-back'>
     </a>
   	<span class="title">Трансляции</span>
-    
-    
+    <a [routerLink]="['about']" [routerLinkActive]="['hidden']" class="add-button icon-add">
+	</a>
   </nav>
 </header>
 <main>
 	<router-outlet></router-outlet>
-	<a [routerLink]="['about']" [routerLinkActive]="['hidden']" class="add-button wawes-effect">
-		<div class="icon-add"></div>
-	</a>
+	
 </main>
 <footer>
 </footer>
